@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="story33.css">
+
+</head>
+<body>
+    <div class="space"></div>
+    <div class="body"> 
+    <div class="leftside">
+        <div class="left">
+            <button class="b1"> NEW TASK</button>
+        </div>
+        <div class="left"> 
+        <button class="b1"> TASK DETAILS</button>
+        </div>
+        <div class="left">
+            <button class="b1"> EMPLOYESS </button>
+        </div>
+        <div class="left">
+            <button class="b1">TASKS REPORT</button>
+        </div>
+    </div>
+    <div class="rightside">
+        <div class="heading"><h1 id="h1"> TASK REGISTRATION</h1></div>
+        <div class="right">
+        <form class="form">
+            <label>TITLE</label>
+            <input type="text" name="title" id="title" placeholder="input your title" class="box1"><br>
+            <label>DESCRIPTION</label>
+            <input type="text" name="description" id="description" placeholder="max number of text allowed 100" class="box2"><br>
+            <label>DURATION</label>
+            <input type="time" class="duration">
+            <a href="TaskDetails.html"><button type="submit" value="REGISTER TASK"  class="regis" style="margin-left: 500px; background-color: black;
+            color: white; height: 30px; margin-bottom: 10px;">Register</button></a>
+        </form>
+        </div>
+       
+       
+
+    </div>
+    </div>
+    <script>
+       /* let form = document.querySelector('form');
+        form.addEventListener('submit', (event)=>{
+            event.preventDefault();
+            handleSubmit()
+        });
+       
+        function handleSubmit(event){
+            var input = {
+                "title" : document.getElementById('title').value,
+                "description" : document.getElementById('description').value,
+                "duration" : document.getElementById('duration').value
+            }
+            let formData = new FormData(form);
+            //let data = input.fromEntries(formData);
+            let jsonData = JSON.stringify(input);
+            let url = "http://localhost:8080/taskManager​/api​/v1​/task​/create"
+            fetch(url,{
+                method: 'POST',
+                hearders: {
+                    'Content-type' : 'application/json'
+                },
+                body: jsonData
+            }).then(res => res.json())
+            .then(result => console.log(result))
+            .catch(err => console.log(err))
+        }*/
+
+
+    </script>
+</body>
+</html>
