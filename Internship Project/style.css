@@ -1,0 +1,151 @@
+.space{
+    background-color: rgb(204, 211, 211);
+    height: 70px;
+    
+}
+.body{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+.leftside{
+    background-color: rgb(204, 211, 211);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 200px;
+    margin-top: 10px;
+    height: 650px;
+    
+
+}
+.left{
+    background-color: rgb(204, 211, 211);
+    margin-bottom: 10px;
+    height: 70px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: 20px;
+
+}
+.b1{
+    background-color: rgb(42, 42, 41);
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.b1:hover{
+    background-color: rgb(204, 211, 211);
+}
+.b1:active{
+    background-color: bisque;
+}
+.rightside{
+    background-color:white;
+    width: 900px;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-right: 400px;
+}
+.heading{
+    margin-left: 280px;
+}
+.homebar{
+    background-color: rgb(204, 211, 211);
+    height: 50px;
+    margin-left: 60px;
+    width: 700px;
+    display: flex;
+    border-radius: 50px;
+    margin-right: 200px;:
+
+    
+
+}
+.b2{
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+.b2:hover{
+    background-color: rgb(204, 211, 211);
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    background-color: rgb(204, 211, 211);
+    height: 50px;
+    border-radius: 15px;
+    width: 700px;
+}
+.task{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.link{
+    margin-top: 10px;
+    
+    
+}
+.b3{
+    background-color: black;
+    color: white;
+    height: 30px;
+    border-radius: 30px;
+    width: 200px;
+    cursor: pointer;
+}
+.table{
+    background-color: white;
+    width: 800px;
+    margin-right: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+ .b4{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+}
+.box1{
+    height: 50px;
+    margin-bottom: 10px;
+    width: 600px;
+    margin-left: 100px;
+    border-radius: 50px;
+    font-size: large;
+    margin-top: 50px;
+
+}
+.form{
+    background-color: rgb(204, 211, 211);
+    font-size: larger;
+    color: black;
+
+}
+.box2{
+    height: 100px;
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: large;
+}
+.duration{
+    margin-left: 30px;
+    margin-top: 100px;
+}
