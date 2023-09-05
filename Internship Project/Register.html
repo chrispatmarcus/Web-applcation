@@ -28,12 +28,12 @@
         <div class="right">
         <form class="form">
             <label>TITLE</label>
-            <input type="text" name="title" id="title" placeholder="                                             input your title" class="box1"><br>
+            <input type="text" name="title" id="title" placeholder="input your title" class="box1"><br>
             <label>DESCRIPTION</label>
-            <input type="text" name="description" id="description" placeholder="                                max number of text allowed 100" class="box2"><br>
+            <input type="text" name="description" id="description" placeholder="         max number of text allowed 100" class="box2"><br>
             <label>DURATION</label>
             <input type="time" class="duration">
-            <a href="Task Details.html"><button type="submit" value="REGISTER TASK"  class="regis" style="margin-left: 500px; background-color: black;
+            <a href="Task Details.html"><button type="submit" id="btn" value="REGISTER TASK"  class="regis" style="margin-left: 500px; background-color: black;
             color: white; height: 30px; margin-bottom: 10px;">Register</button></a>
         </form>
         </div>
@@ -43,6 +43,39 @@
     </div>
     </div>
     <script>
+        let form = document.querySelector('form');
+        var title = document.getElementById('title').value;
+        var description = document.getElementById('description').value;
+        var duration = document.querySelector('.duration').value;
+        var button = document.getElementById('btn')
+
+        button.addEventListener('click', (event)=> {
+            event.preventDefault();
+
+            submitData();
+        })
+
+            function submitData(){
+                var input = {
+                "title" : title,
+                "description" : description,
+                "duration" : duration
+            }
+            let formData = new FormData(form);
+
+            //let data = input.fromEntries(formData);
+            let jsonData = JSON.stringify(input);
+            let url = "http://localhost:8080/taskManager/api/v1/task/create"
+            fetch(url,{
+                method: 'POST',
+                hearders: {
+                    'Content-type' : 'application/json'
+                },
+                body: jsonData
+            }).then(res => res.json())
+            .then(result => console.log(result))
+            .catch(err => console.log(err))
+            }
        /* let form = document.querySelector('form');
         form.addEventListener('submit', (event)=>{
             event.preventDefault();
